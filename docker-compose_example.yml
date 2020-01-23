@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "90:90"
+    command: --DBHOST=docker.for.win.localhost
+    environment:
+      AWS_ACCESS_KEY_ID: <Your AWS_ACCESS_KEY_ID>
+      AWS_SECRET_ACCESS_KEY: <Your AWS_SECRET_ACCESS_KEY>
